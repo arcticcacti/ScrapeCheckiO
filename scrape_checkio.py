@@ -8,13 +8,13 @@ from datetime import datetime
 from selenium import webdriver
 from selenium.common.exceptions import StaleElementReferenceException, NoSuchElementException
 
-USERNAME_PATTERN = r'https://checkio.org/user/(?P<username>.*?)/'
-MISSION_NAME_PATTERN = r'https://checkio.org/mission/(?P<mission_name>.*?)/'
+USERNAME_PATTERN = r'https://py.checkio.org/user/(?P<username>.*?)/'
+MISSION_NAME_PATTERN = r'https://py.checkio.org/mission/(?P<mission_name>.*?)/'
 
-USER_PAGE = 'https://checkio.org/user/'
+USER_PAGE = 'https://py.checkio.org/user/'
 LOGIN_PAGE = 'https://checkio.org/profile/login/'
-MISSIONS_PAGE = 'https://checkio.org/user/{name}/list/'
-SOLUTION_PAGE = 'https://checkio.org/mission/{name}/solve/'
+MISSIONS_PAGE = 'https://py.checkio.org/user/{name}/list/'
+SOLUTION_PAGE = 'https://py.checkio.org/mission/{name}/solve/'
 
 PAGE_RETRIES = 3
 RETRY_DELAY_SECS = 5
